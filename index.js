@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3002;
 //define the root
 app.get('/',(req,res)=>{
     res.send(`<div>
@@ -7,4 +8,4 @@ app.get('/',(req,res)=>{
     </div>`)
 });
 
-app.listen(5000);
+app.listen(port);
