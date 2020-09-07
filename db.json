@@ -1,9 +1,9 @@
 {
-  "posts":[
+  "users":[
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "Username" : "Ron",
+      "Email": "rony@gmail.com",
+      "Password" : "ronfunpwd"
     }
   ],
   "comments" : [
