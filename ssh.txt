@@ -1,0 +1,53 @@
+1. To generate the SSH Key
+   open the git bash and then
+   ssh-keygen -t rsa -b 4096 -C "ravirajparab44@gmail.com"
+   Then hit enter, ssh keys will be generated
+   When asked for passphrase , i added => iloveyouujwala
+
+2. start the ssh agent
+   eval $(ssh-agent -s)
+
+3. Add your SSH private key to ssh-agent
+   ssh-add ~/.ssh/id_rsa
+   it will ask for passphrase, during which add the passphrase
+
+4. to verify ssh keys, in git bash hit
+   ls -al ~/.ssh
+   That will show some names. If you error that means ssh keys are not generated
+
+5. Copy the ssh keys to clipboard
+---------------------------
+Now see if you have keys
+in the git cmd type => heroku keys
+If you see no keys then hit ==> heroku keys:add
+It will now say that ssh keys found and you can use the same 
+---------------------------
+
+To view existing git remotes, before go to the project
+git remote -v
+
+To remote certain git remote
+git remote rm heroku   ==> where heroku is the remote git
+
+Now in the heroku, in the settings change the name of the app e.g. mycrudops
+Because you made this change, a new git will be created and it has to be put as new remote and previous remotes should be deleted. Now add new remote as heroku
+git remote add heroku git@heroku.com:mycrudops.git
+
+Check if the remote is added using
+git remote -v
+
+Login into heroku using
+heroku login
+
+Once login you can do git push ==>git push heroku master
+It will ask for passphrase , enter iloveyouujwala
+----------------------------------
+
+To set git do ==> git init
+to add to staging ===> git add .
+to commit ===>git commit -m "your comment"
+to check the git status ===> git status
+to check the log ==> git log
+
+
+ 
