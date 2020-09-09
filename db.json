@@ -1,17 +1,18 @@
 {
-  "users":[
-    {
-      "id":0,
-      "Username" : "Ron",
-      "Email": "rony@gmail.com",
-      "Password" : "ronfunpwd"
-    }
-  ],
-  "comments" : [
+  "users": [
     {
       "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "Username": "Ron",
+      "Email": "rony@gmail.com",
+      "Password": "ronfunpwd"
+    }
+  ],
+  "securities": [
+    {
+      "id": 0,
+      "Symbol": "SBIN",
+      "Quantity": 45,
+      "PL": 0
     }
   ]
 }
