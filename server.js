@@ -1,11 +1,14 @@
 const jsonServer = require('json-server');
 const cors = require("cors");
+const fs =require("fs");
 const jsonResetMiddleware = require("json-server-reset");
 
 const resetDB = (req, res, next) => {
-    if (req.method === 'GET' && req.url.endsWith('/reset/')) {
-      const db = JSON.parse(fs.readFileSync('db.json', 'utf8'));
-      router.db.setState(db);
+    if (req.method === 'GET' && req.url.endsWith('/reset')) {
+      router.db.setState({
+          "users":[],
+          "securities":[]
+      });
       res.sendStatus(201);
     } else {
       next();
