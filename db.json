@@ -1,8 +1,19 @@
 {
     "users": [
-        
+      {
+        "id": 0,
+        "Username": "Alex",
+        "Email": "alesky@gmail.com",
+        "Password": "althking"
+      }
     ],
     "securities": [
-       
+      {
+        "id": 0,
+        "Symbol": "SUNPHARMAEQ",
+        "Quantity": 29,
+        "Open": true,
+        "PL": 0
+      }
     ]
-}
+  }
