@@ -1,19 +1,12 @@
 {
     "users": [
         {
-            "id": 0,
-            "Username": "Alex",
-            "Email": "alesky@gmail.com",
-            "Password": "alex56#king"
+            
         }
     ],
     "securities": [
         {
-            "id": 0,
-            "Symbol": "SUNPHARMAEQ",
-            "Quantity": 15,
-            "Open": true,
-            "PL": 0
+            
         }
     ]
 }
