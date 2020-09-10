@@ -7,7 +7,7 @@ const resetDB = (req, res, next) => {
     if (req.method === 'GET' && req.url.endsWith('/reset')) {
       router.db.setState({
           "users":[],
-          "securities":[]
+          "positions":[]
       });
       res.sendStatus(201);
     } else {

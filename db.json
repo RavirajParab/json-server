@@ -1,11 +1,4 @@
 {
   "users": [],
-  "securities": [
-    {
-      "Symbol": "SBIN",
-      "Quantity": 23,
-      "PL": 0,
-      "id": 1
-    }
-  ]
+  "positions": []
 }
